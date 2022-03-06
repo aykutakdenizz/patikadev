@@ -1,0 +1,56 @@
+1- 
+test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+
+create table test.test (
+	id integer,
+	name varchar(50),
+	birthday date,
+	email varchar(100)
+);
+
+
+------------------------------------------------------------------------------------------------------------------------
+3-
+Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+
+update test.test
+  set name = 'aykut',
+  email = 'aaa@gmail.com'
+  where id = 1;
+
+update test.test
+  set id = 51
+  where name = 'aykut';
+
+update test.test
+  set email = 'a@gmail.com'
+  where email = 'aaa@gmail.com';
+
+update test.test
+  set id= 52
+  where email = 'a@gmail.com';
+
+update test.test
+  set name = 'test',
+  email = 't@gmail.com'
+  where id = 52;
+
+
+------------------------------------------------------------------------------------------------------------------------
+4-
+Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+delete test.test
+  where id = 1;
+
+delete test.test
+  where name = 'aykut';
+
+delete test.test
+  where email = 'aaa@gmail.com';
+
+delete test.test
+  where birthday = '2021-08-29';
+
+delete test.test
+  where id = 51;
