@@ -1,0 +1,1 @@
+This is a simple game based on string. It is the homework code given by patika.dev to better understand the basics of Java object oriented programming.
